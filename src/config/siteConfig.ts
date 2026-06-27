@@ -4,12 +4,12 @@ import type { SiteConfig } from "../types/config";
 const SITE_LANG = "en"; // 语言代码，例如：'en', 'zh_CN', 'ja' 等。
 
 export const siteConfig: SiteConfig = {
-	title: "Mizuki",
-	subtitle: "One demo website",
-	siteURL: "https://mizuki.mysqil.com/", // 请替换为你的站点URL，以斜杠结尾
-	siteStartDate: "2025-01-01", // 站点开始运行日期，用于站点统计组件计算运行天数
+	title: "Sakura",
+	subtitle: "",
+	siteURL: "https://lyravoid.github.io/Mizuki/", // 请替换为你的站点URL，以斜杠结尾
+	siteStartDate: "2026-06-18", // 站点开始运行日期，用于站点统计组件计算运行天数
 
-	lang: SITE_LANG,
+	lang: "zh_CN",
 
 	themeColor: {
 		hue: 240, // 主题色的默认色相，范围从 0 到 360。例如：红色：0，青色：200，蓝绿色：250，粉色：345
@@ -30,8 +30,8 @@ export const siteConfig: SiteConfig = {
 
 	// 顶栏标题配置
 	navbarTitle: {
-		// 显示模式："text-icon" 显示图标+文本，"logo" 仅显示Logo
-		mode: "text-icon",
+		// 显示模式："text-icon" 显示图标+文本，"logo" 仅显示Logo，"text" 仅显示文本
+		mode: "text",
 		// 顶栏标题文本
 		text: "MizukiUI",
 		// 顶栏标题图标路径，默认使用 public/assets/home/home.webp
@@ -52,7 +52,7 @@ export const siteConfig: SiteConfig = {
 	},
 
 	bilibili: {
-		vmid: "your-bilibili-vmid", // 在此处设置你的Bilibili用户ID (uid)，例如 "1129280784"
+		vmid: "580450273", // 在此处设置你的Bilibili用户ID (uid)，例如 "1129280784"
 		fetchOnDev: false, // 是否在开发环境下获取 Bilibili 数据（默认 false）
 		coverMirror: "", // 封面图片镜像源（可选，如果需要使用镜像源，例如 "https://images.weserv.nl/?url="）
 		useWebp: true, // 是否使用WebP格式（默认 true）
@@ -65,7 +65,7 @@ export const siteConfig: SiteConfig = {
 	},
 
 	anime: {
-		mode: "local", // 番剧页面模式："bangumi" 使用Bangumi API，"local" 使用本地配置，"bilibili" 使用Bilibili API
+		mode: "bilibili", // 番剧页面模式："bangumi" 使用Bangumi API，"local" 使用本地配置，"bilibili" 使用Bilibili API
 	},
 
 	// 日记页面 Memos API 地址，留空则使用静态数据
@@ -108,16 +108,16 @@ export const siteConfig: SiteConfig = {
 		// 支持单张图片或图片数组，当数组长度 > 1 时自动启用轮播
 		src: {
 			desktop: [
-				"/assets/desktop-banner/1.webp",
-				"/assets/desktop-banner/2.webp",
-				"/assets/desktop-banner/3.webp",
-				"/assets/desktop-banner/4.webp",
+				"/assets/desktop-banner/7bb4d72918e04f6f9cd11ea083b6f950.jpeg",
+				"/assets/desktop-banner/98030b561d90468cbeccec1293785ba2.jpeg",
+				"/assets/desktop-banner/a1b556561aaa4136bb4de3ddaad400de.jpeg",
+				"/assets/desktop-banner/a8991f49c1ab4a8b9c3e00d63bcb9849.jpeg",
+				"/assets/desktop-banner/b58b763430b74ff39654732fdda8899c.jpeg",
 			], // 桌面横幅图片
 			mobile: [
-				"/assets/mobile-banner/1.webp",
-				"/assets/mobile-banner/2.webp",
-				"/assets/mobile-banner/3.webp",
-				"/assets/mobile-banner/4.webp",
+				"/assets/mobile-banner/79e0e03bd5394d39887db1a0128f4dbc.jpeg",
+				"/assets/mobile-banner/a60c801076c241a690e6831581ca7d15.jpeg",
+				"/assets/mobile-banner/beac62cd602347cc8ca100aa95d488c5.jpeg",
 			], // 移动横幅图片
 		}, // 使用本地横幅图片
 
@@ -178,10 +178,10 @@ export const siteConfig: SiteConfig = {
 		},
 	},
 	toc: {
-		enable: true, // 总开关，启用目录功能
-		mobileTop: true, // 手机端顶部 TOC 按钮
-		desktopSidebar: true, // 电脑端右侧边栏 TOC
-		floating: true, // 悬浮 TOC 按钮
+		enable: false, // 总开关，禁用目录功能
+		mobileTop: false, // 手机端顶部 TOC 按钮
+		desktopSidebar: false, // 电脑端右侧边栏 TOC
+		floating: false, // 悬浮 TOC 按钮
 		depth: 2, // 目录深度，1-6，1 表示只显示 h1 标题，2 表示显示 h1 和 h2 标题，依此类推
 		useJapaneseBadge: true, // 使用日语假名标记（あいうえお...）代替数字，开启后会将 1、2、3... 改为 あ、い、う...
 	},
